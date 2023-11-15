@@ -19,12 +19,14 @@ var db = mongoose.connection;
 db.on('error', () => console.log("Error in Connecting to Database"));
 db.once('open', () => console.log("Connected to Database"));
 app.post("/sign_up", (req, res) => {
-    var name = req.body.name;
+    var firstname = req.body.firstname;
+    var lastname = req.body.lastname;
     var email = req.body.email;
     var phno = req.body.phno;
     var password = req.body.password;
     var data = {
-        "name": name,
+        "firstname": firstname,
+        "lastname":lastname,
         "email": email,
         "phno": phno,
         "password": password
