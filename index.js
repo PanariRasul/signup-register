@@ -10,7 +10,7 @@ app.use(bodyParser.urlencoded({
     extended: true
 }))
 
-mongoose.connect('mongodb://0.0.0.0:27017/mydb', {
+mongoose.connect('mongodb://0.0.0.0:27017/config', {
     useNewUrlParser: true,
     useUnifiedTopology: true
 });
@@ -48,3 +48,8 @@ app.get("/", (req, res) => {
 }).listen(3000);
 
 console.log("Listening on Port 3000");
+
+
+
+//HPKPXFIiUgGIlmnO
+//VLhVJcW3UcM4OedE
